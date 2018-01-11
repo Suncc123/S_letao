@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import "variable";
+//通用样式
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// login的样式
+html, body {
+  height: 100%;
+}
+
+.bg_color {
+  width: 100%;
+  height: 100%;
+  background-color: @bgColor;
+  padding-top: 150px;
+}
+
+//index的样式
+.lt_slide {
+  width: 180px;
+  height: 100%;
+  background-color: @bgColor;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+  &.now {
+    left: -180px;
+  }
+  .slide_top {
+    width: 100%;
+    height: 50px;
+    background-color: @Color;
+    margin-bottom: 30px;
+    a {
+      display: block;
+      width: 180px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+
+  .slide_content {
+    width: 180px;
+
+    .c_user {
+      width: 100%;
+      height: 150px;
+    }
+
+    img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    p {
+      width: 180px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+
+  .c_list {
+    width: 180px;
+    li {
+      width: 100%;
+      padding-left: 40px;
+      height: 40px;
+      border: 3px solid transparent;
+
+    }
+    .active {
+      border-left-color: @Color;
+      color: #fff;
+      background: #000;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      color: #ccc;
+    }
+  }
+}
+  .cate {
+    width: 100%;
+    a {
+      display: block;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      color: #ccc;
+      border: 3px solid @Color;
+    }
+  }
+
+  .lt_main {
+    width: 100%;
+    padding-left: 180px;
+    height: 100%;
+    background-color: #f5f5f5;
+    transition: all 1s;
+
+    &.now {
+      padding-left: 0;
+    }
+  }
+
+  .lt_header {
+    width: 100%;
+    height: 50px;
+    background-color: #3c8dbc;
+    margin-bottom: 20px;
+
+    .close_menu, .logout_menu {
+      padding: 0 20px;
+      color: #fff;
+      font-size: 16px;
+      line-height: 50px;
+    }
+  }
+
+  .lt_content {
+    width: 100%;
+    padding: 0 20px;
+
+    .breadcrumb {
+      margin-bottom: 10px;
+    }
+    .inner_left {
+      width: 45%;
+      height: 400px;
+
+      .register {
+        width: 70%;
+        height: 100%;
+      }
+    }
+    .inner_right {
+      width: 45%;
+      height: 400px;
+
+      .shoe {
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
