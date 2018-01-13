@@ -28,7 +28,8 @@ html, body {
   width: 180px;
   height: 100%;
   background-color: @bgColor;
-  position: absolute;
+  position: fixed;
+  z-index: 333;
   left: 0;
   top: 0;
   transition: all 1s;
@@ -104,8 +105,8 @@ html, body {
 
 .lt_main {
   width: 100%;
-  padding-left: 180px;
   height: 100%;
+  padding-left:180px;
   background-color: #fff;
   transition: all 1s;
 
@@ -119,9 +120,14 @@ html, body {
   height: 50px;
   background-color: #3c8dbc;
   margin-bottom: 20px;
+  position: fixed;
+  padding: 0 200px 0 20px;
+  transition: all 1s;
 
+  &.now{
+    padding-right: 20px;
+  }
   .close_menu, .logout_menu {
-    padding: 0 20px;
     color: #fff;
     font-size: 16px;
     line-height: 50px;
@@ -131,9 +137,10 @@ html, body {
 .lt_content {
   width: 100%;
   padding: 0 20px;
+  padding-top: 70px;
 
   .breadcrumb {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .inner_left {
     width: 45%;
@@ -168,4 +175,15 @@ html, body {
 
 .btn-add {
   margin: 10px 0 20px 0;
+}
+
+//second的样式
+.uploadFile {
+  position: relative;
+  .files {
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+  }
 }

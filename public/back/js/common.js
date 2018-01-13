@@ -45,6 +45,7 @@ $(function () {
 
     $(".lt_slide").toggleClass("now");
     $(".lt_main").toggleClass("now");
+    $('.lt_header').toggleClass("now");
 
   });
 
