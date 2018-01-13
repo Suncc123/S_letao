@@ -4,6 +4,9 @@
   padding: 0;
   list-style: none;
 }
+a:link,
+a:active,
+a:visited,
 a:hover {
   text-decoration: none;
 }
@@ -71,14 +74,11 @@ body {
 }
 .lt_slide .c_list li {
   width: 100%;
-  padding-left: 40px;
-  height: 40px;
-  border: 3px solid transparent;
 }
 .lt_slide .c_list .active {
   border-left-color: #367fa9;
   color: #fff;
-  background: #000;
+  background: #333;
 }
 .lt_slide .c_list a {
   display: block;
@@ -86,23 +86,17 @@ body {
   height: 40px;
   line-height: 40px;
   color: #ccc;
+  border: 3px solid transparent;
+  padding-left: 40px;
 }
-.cate {
-  width: 100%;
-}
-.cate a {
-  display: block;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  color: #ccc;
-  border: 3px solid #367fa9;
+.lt_slide .c_list .cate {
+  padding-left: 10px;
 }
 .lt_main {
   width: 100%;
   padding-left: 180px;
   height: 100%;
-  background-color: #f5f5f5;
+  background-color: #fff;
   transition: all 1s;
 }
 .lt_main.now {
@@ -143,4 +137,9 @@ body {
 .lt_content .inner_right .shoe {
   width: 70%;
   height: 100%;
+}
+.table.table-bordered td,
+.table.table-bordered th {
+  vertical-align: middle;
+  text-align: center;
 }
