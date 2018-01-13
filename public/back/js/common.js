@@ -32,12 +32,10 @@ $(function () {
 
   });
 
- var cate = $(".lt_category");
-
   //隐藏/显示分类列表
-  cate.on("click",function () {
-    $(this).find(".cate").slideToggle();
-
+  $('.cate').prev().on("click",function (e) {
+    console.log(e);
+    $(this).next().slideToggle();
   });
 
  // 点击按钮aside隐藏

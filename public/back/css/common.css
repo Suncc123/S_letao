@@ -74,12 +74,16 @@ body {
   width: 180px;
 }
 .lt_slide .c_list li {
-  width: 100%;
+  width: 180px;
+  border: 3px solid transparent;
 }
-.lt_slide .c_list .active {
+.lt_slide .c_list li.active {
   border-left-color: #367fa9;
   color: #fff;
-  background: #333;
+  background: #000;
+}
+.lt_slide .c_list li:nth-child(2) {
+  border: 0;
 }
 .lt_slide .c_list a {
   display: block;
@@ -87,11 +91,13 @@ body {
   height: 40px;
   line-height: 40px;
   color: #ccc;
-  border: 3px solid transparent;
   padding-left: 40px;
+  border: 3px solid transparent;
 }
-.lt_slide .c_list .cate {
-  padding-left: 10px;
+.lt_slide .c_list a.active {
+  border-left-color: #367fa9;
+  color: #fff;
+  background: #000;
 }
 .lt_main {
   width: 100%;
@@ -123,8 +129,7 @@ body {
 }
 .lt_content {
   width: 100%;
-  padding: 0 20px;
-  padding-top: 70px;
+  padding: 70px 20px 0 20px;
 }
 .lt_content .breadcrumb {
   margin-bottom: 20px;
