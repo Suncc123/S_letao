@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.lt_main .common {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.lt_main .proPrice span:first-child {
+  color: red;
+}
+.lt_main .proPrice span:last-child {
+  color: #666;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.lt_main .proSize {
+  line-height: 32px;
+}
+.lt_main .proSize span {
+  padding: 6px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  background-color: #f5f5f5;
+}
+.lt_main .proNum span {
+  color: #666;
+  font-size: 12px;
+}
+.lt_footer {
+  background-color: #eee;
+  border-top: 1px solid red;
+  padding: 7px 0 0 20px;
+  font-size: 14px;
+  line-height: 40px;
+}
+.lt_footer button {
+  margin-right: 10px;
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.lt_history {
+  padding: 10px;
+  color: #666;
+  font-size: 12px;
+}
+.lt_history span {
+  height: 30px;
+  line-height: 30px;
+}
+.lt_history ul {
+  border: 1px dashed red;
+}
+.lt_history ul li {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.lt_history li + li {
+  border-top: 1px dashed red;
+}

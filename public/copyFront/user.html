@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>乐购商城-首页</title>
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/user.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+<div class="lt_container">
+
+  <div class="lt_header">
+    <a href="index.html" class="head_left"><i class="fa fa-chevron-left"></i></a>
+    <h4>会员中心</h4>
+  </div>
+
+  <div class="lt_main">
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell">
+        <a href="#">
+          <img src="images/user.jpg" alt="">
+          <div  class="user-text">
+            <!--数据渲染-->
+          </div>
+        </a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">账户与安全</a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a href="cart.html" class="mui-navigate-right">我的购物车</a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a class="mui-navigate-right">收货地址管理</a>
+      </li>
+    </ul>
+    <a href="#" class="mui-btn mui-block btn-logout">退出</a>
+
+  </div>
+
+  <div class="lt_footer">
+    <ul>
+      <li><a href="index.html"><i class="fa fa-home"></i>
+        <p>首页</p>
+      </a></li>
+      <li><a href="category.html"><i class="fa fa-bars"></i>
+        <p>分类</p>
+      </a></li>
+      <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>
+        <p>购物车</p>
+      </a></li>
+      <li class="active"><a href="user.html"><i class="fa fa-user"></i>
+        <p>会员中心</p>
+      </a></li>
+    </ul>
+  </div>
+</div>
+
+<!--数据渲染-->
+<script type="text/html" id="tpl">
+
+  <span>{{ username }}</span>
+  <p class="phone">绑定手机:{{ mobile }}</p>
+
+</script>
+
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>

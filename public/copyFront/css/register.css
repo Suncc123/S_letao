@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.lt_main {
+  padding: 10px;
+}
+.mui-input-group:after {
+  background-color: transparent;
+}
+.mui-input-group .mui-input-row {
+  margin-bottom: 15px;
+}
+.mui-input-group .mui-input-row:after {
+  background-color: transparent;
+}
+.mui-input-group .mui-input-row .getNum {
+  width: 25%;
+}
+.mui-input-group .mui-input-row .getNum.now {
+  background-color: #eee;
+  border-color: #ccc;
+}
+.mui-input-group .mui-input-row .checkNum {
+  width: 70%;
+}
+.mui-input-group input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.mui-input-row {
+  margin-bottom: 15px;
+}
+.mui-input-row .tips {
+  padding: 0;
+}
+.mui-input-row .tips,
+.mui-input-row .fast-login {
+  font-size: 12px;
+}
+.mui-input-row .btn-register {
+  width: 100%;
+  height: 40px;
+}
